@@ -1,0 +1,109 @@
+// Global Variables
+
+$c1: (#010b19);
+$c2: (#021631);
+$c3: (#03214a);
+$c4: (#042c62);
+$c5: (#05377b);
+
+
+body {
+	background-image: linear-gradient($c1, $c1, $c1, $c5);
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 100vh;
+	color: white; 
+	font-family: 'Space Grotesk', sans-serif;
+}
+
+h1 {
+	font-size: 500%;
+	margin-bottom: 0.25em;
+}
+
+h2 {
+	font-size: 400%;
+	margin-bottom: 0.25em;
+}
+
+
+
+a {
+	&:link {
+		color: white;
+	}
+	&:hover {
+		color: $c5;
+	}
+	&:active {
+		color: $c3;
+	}
+}
+
+#main-content {
+	width: 100%;
+	margin: 0 auto;
+	padding: 2em;
+	background: rgba(0, 0, 0, 0.6);
+	z-index: -1;
+	img {
+		width: 100%;
+		float: right;
+		border: 1px solid white;
+	}
+}
+
+#hero-section {
+	margin-bottom: 7em;
+	p, a {
+		font-size: 150%;
+	}
+}
+
+//Grid
+.grid-container {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	padding: 1em;
+	&.debug {
+		background-color: rgba(lightgreen, 0.7); 
+	}
+}
+
+.card {
+	background-color: rgba(0, 0, 0, 0) !important;
+	border: 1px solid white;
+	border-radius: 1em;
+	padding: 1em;
+	height: 100%;
+	.card-body {
+		display: none;
+	}
+	.card-title {
+		font-weight: bold;
+	}
+	a {
+		margin-top: auto;
+	}
+}
+
+.modal-content {
+	background-color: $c4 !important;
+	width: auto !important;
+}
+
+.modal-dialog {
+	max-width: 1000px !important;
+}
+
+
+button {
+	margin-top: auto;
+}
+
+
+.space-bottom {
+	margin-bottom: 2em;
+}

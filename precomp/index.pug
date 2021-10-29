@@ -1,0 +1,288 @@
+head
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	style
+		include ../stylesheets/main.css
+		include ../stylesheets/stars.css
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	script(src="../audio.js")
+	
+html
+	body
+		div.container
+			div#main-content
+				div#hero-section.row
+					div.col-7
+						h1 RJ Valencia
+						p The name’s Richard Joseph Valencia, but please call me RJ! I am currently a masters student for Instructional Design at Florida State University. I’m hard at work preparing to join the working world in instructional design, and I am eager to make genuine great works with others, learn a thing or two along the way, and make the places I go better than I found them. I plan to join the corporate sector of instructional design, and hone in my craft by becoming experienced at all aspects of the instructional design process. I also like to learn about various topics, like philosophy, voiceover work, and new technologies!
+						a(href="#portfolio") Click Here to See My Portfolio Below!
+					div.col-5.clearfix.float-md-end
+						a(href='https://www.linkedin.com/in/richard-rj-valencia/' target='_blank')
+							figure
+								<img src="../img/hero-img.jpg">
+								figcaption(style='text-align: center') Click here to see my LinkedIn Page!
+				br
+				div.row
+					div#portfolio.col-12
+						h2 Portfolio
+						hr
+				div.row.space-bottom
+					div#portfolio.subtitle.col-12
+						h3 Articulate Storyline 360
+					div.col-6
+						div.card
+							div.card-body 
+							h5.card-title Basics to Music
+							p.card-text This class assignment had us follow the whole instructional design process using the ADDIE model. Prior to this, we conducted front-end analysis of the topic, audience and context, deconstructed the topic's subordinate skills and entry behavior, and created assessment and evaluation methods. This was the culumination of the semester's work. This was the first time I used Storyline 360, which I utilized the variable, triggers, and quiz pool functionality. I also created vector assets using Adobe Illustrator for the music symbols, as well as provided the voiceover.
+							button(class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal_1") Click Here to View
+						div#modal_1.modal(tabindex="-1" role="dialog")
+							div.modal-dialog.modal-dialog-centered(role='document')
+								div.modal-content
+									div.modal-header
+										h5.modal-title Articulate Storyline 360 - Basics of Music
+										button(type="button" class="close" data-bs-dismiss="modal" aria-label="Close")
+											span(aria-hidden="true") &times;
+									div.modal-body
+										<iframe src="..\portfolio\Articulate 360\Valencia_BasicsToMusic_ver2 - Storyline output\Valencia_BasicsToMusic_ver2 - Storyline output\story.html" width="1000" height="658"></iframe>
+									div.modal-footer
+										button(type="button" class="btn btn-secondary" data-bs-dismiss="modal") Close
+					div.col-6
+						div.card
+							div.card-body 
+							h5.card-title Music Clefs
+							p.card-text This class assignment had us create a simple lesson using a technology of our choosing. I selected Articulate sToryline 360 to further improve my skills. For this, I decided to focus on making the development process simpler, as well as focus on better visual design and usability. I also provided the voiceover for this project as well.
+							button(class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal_2") Click Here to View
+						div#modal_2.modal(tabindex="-1" role="dialog")
+							div.modal-dialog.modal-dialog-centered(role='document')
+								div.modal-content
+									div.modal-header
+										h5.modal-title Articulate Storyline 360 - Music Clefs
+										button(type="button" class="close" data-bs-dismiss="modal" aria-label="Close")
+											span(aria-hidden="true") &times;
+									div.modal-body
+										<iframe src="..\portfolio\Articulate 360\Valencia_MusicClefs - Storyline output\Valencia_MusicClefs - Storyline output\story.html" width="1000" height="658"></iframe>
+									div.modal-footer
+										button(type="button" class="btn btn-secondary" data-bs-dismiss="modal") Close
+				div.row.space-bottom
+					div#portfolio.subtitle.col-12
+						h3 Instructional Documents
+					div.col-4
+						div.card
+							div.card-body 
+							h5.card-title eBook - The school drummer's mannual
+							p.card-text My most recent project! For a class assignment, we had to design an ebook using existing content, in which we provide more interactivity such as hyperlinks to specific resources or knowledge checks within the book. I decided to use an old percussion book, and focused on embeding resources and video demonstrations to make the content more applicable and approachable. I used Adobe InDesign (first time using) to create the ebook.
+							button(class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal_3") Click Here to View
+						div#modal_3.modal(tabindex="-1" role="dialog")
+							div.modal-dialog.modal-dialog-centered(role='document')
+								div.modal-content
+									div.modal-header
+										h5.modal-title eBook - The school drummer's mannual
+										button(type="button" class="close" data-bs-dismiss="modal" aria-label="Close")
+											span(aria-hidden="true") &times;
+									div.modal-body
+										<embed src="..\portfolio\Instructional Documents\Valencia_eBook.pdf#toolbar=0" width="1000" height="658">
+									div.modal-footer
+										button(type="button" class="btn btn-secondary" data-bs-dismiss="modal") Close
+					div.col-4
+						div.card
+							div.card-body 
+							h5.card-title How to Read HTML
+							p.card-text This was for assignment to make an infographic that served as a effective job aid. For this, I used Canva to create the infographic, and utilized my Information Technology skills to provide the context. The focus is a basic introduction to HTML, providing what it is, how it's used, an example, and vocabulary for foundational understanding. The design choice I am most proud of is the "Grammar" and "Basic Structure for a Webpage", for I made each element a specific color in so the "Grammar" could be used as a tool to decipher the example in the "Basic Structure for a Webpage" section.
+							button(class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal_4") Click Here to View
+						div#modal_4.modal(tabindex="-1" role="dialog")
+							div.modal-dialog.modal-dialog-centered(role='document')
+								div.modal-content
+									div.modal-header
+										h5.modal-title How to Read HTML
+										button(type="button" class="close" data-bs-dismiss="modal" aria-label="Close")
+											span(aria-hidden="true") &times;
+									div.modal-body
+										<embed src="..\portfolio\Instructional Documents\Valencia_How to Read HTML.pdf#toolbar=0" width="1000" height="658">
+									div.modal-footer
+										button(type="button" class="btn btn-secondary" data-bs-dismiss="modal") Close
+					div.col-4
+						div.card
+							div.card-body 
+							h5.card-title Tenor Drums Easy Guide
+							p.card-text This class assignment had us make a simple job aid using a Word document. The topic of my job aid is how to play the tenor drums, focusing on what tenor drums are, how to play, and emphasizing specific techniques needed to play the instrument. The drums were created using Word's shapes function. I decided to utilize Adobe Illustrator to create vector assets for the document; I created the drummers' hands in that software.
+							button(class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal_5") Click Here to View
+						div#modal_5.modal(tabindex="-1" role="dialog")
+							div.modal-dialog.modal-dialog-centered(role='document')
+								div.modal-content
+									div.modal-header
+										h5.modal-title Tenor Drums Easy Guide
+										button(type="button" class="close" data-bs-dismiss="modal" aria-label="Close")
+											span(aria-hidden="true") &times;
+									div.modal-body
+										<embed src="..\portfolio\Instructional Documents\ValenciaRichard_JobAid.pdf#toolbar=0" width="1000" height="658">
+									div.modal-footer
+										button(type="button" class="btn btn-secondary" data-bs-dismiss="modal") Close
+				div.row.space-bottom
+					div#portfolio.subtitle.col-12
+						h3 Tribecca - Using Canva
+						p When I interned for Tribecca Language in early 2021, I was tasked with creating worksheets from a given curriculum. These worksheets were designed for young children (ages 3-7), and developed using Canva. These worksheets focus on giving information, as well as providing activities to apply that said information. This was my first time using Canva, and I created at least 100 worksheets using a given template. These documents were authorized for me to use as work examples from my internship, and give a demonstration on how these worksheets were designed.
+					div.col-3
+						div.card
+							div.card-body 
+							h5.card-title Clothes - Japanese
+							p.card-text 
+							button(class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal_6") Click Here to View
+						div#modal_6.modal(tabindex="-1" role="dialog")
+							div.modal-dialog.modal-dialog-centered(role='document')
+								div.modal-content
+									div.modal-header
+										h5.modal-title Clothes - Japanese
+										button(type="button" class="close" data-bs-dismiss="modal" aria-label="Close")
+											span(aria-hidden="true") &times;
+									div.modal-body
+										<embed src="..\portfolio\Tribecca - Using Canva\Clothes - Japanese.pdf#toolbar=0" width="1000" height="658">
+									div.modal-footer
+										button(type="button" class="btn btn-secondary" data-bs-dismiss="modal") Close
+					div.col-3
+						div.card
+							div.card-body 
+							h5.card-title Clothes - Spanish
+							p.card-text
+							button(class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal_7") Click Here to View
+						div#modal_7.modal(tabindex="-1" role="dialog")
+							div.modal-dialog.modal-dialog-centered(role='document')
+								div.modal-content
+									div.modal-header
+										h5.modal-title Clothes - Spanish
+										button(type="button" class="close" data-bs-dismiss="modal" aria-label="Close")
+											span(aria-hidden="true") &times;
+									div.modal-body
+										<embed src="..\portfolio\Tribecca - Using Canva\Clothes - Spanish.pdf#toolbar=0" width="1000" height="658">
+									div.modal-footer
+										button(type="button" class="btn btn-secondary" data-bs-dismiss="modal") Close
+					div.col-3
+						div.card
+							div.card-body 
+							h5.card-title Winter Clothes - Japanese
+							p.card-text 
+							button(class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal_8") Click Here to View
+						div#modal_8.modal(tabindex="-1" role="dialog")
+							div.modal-dialog.modal-dialog-centered(role='document')
+								div.modal-content
+									div.modal-header
+										h5.modal-title Winter Clothes - Japanese
+										button(type="button" class="close" data-bs-dismiss="modal" aria-label="Close")
+											span(aria-hidden="true") &times;
+									div.modal-body
+										<embed src="..\portfolio\Tribecca - Using Canva\Winter Clothes - Japanese.pdf#toolbar=0" width="1000" height="658">
+									div.modal-footer
+										button(type="button" class="btn btn-secondary" data-bs-dismiss="modal") Close
+					div.col-3
+						div.card
+							div.card-body 
+							h5.card-title Winter Clothes - Spanish
+							p.card-text 
+							button(class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal_9") Click Here to View
+						div#modal_9.modal(tabindex="-1" role="dialog")
+							div.modal-dialog.modal-dialog-centered(role='document')
+								div.modal-content
+									div.modal-header
+										h5.modal-title Winter Clothes - Spanish
+										button(type="button" class="close" data-bs-dismiss="modal" aria-label="Close")
+											span(aria-hidden="true") &times;
+									div.modal-body
+										<embed src="..\portfolio\Tribecca - Using Canva\Winter Clothes - Spanish.pdf#toolbar=0" width="1000" height="658">
+									div.modal-footer
+										button(type="button" class="btn btn-secondary" data-bs-dismiss="modal") Close
+				div.row.space-bottom
+					div#portfolio.subtitle.col-12
+						h3 Videos (Adobe Premiere and Voiceover)
+					div.col-6
+						div.card
+							div.card-body 
+							h5.card-title Case 15 - Gap Inc.
+							p.card-text This class assignment was a group project, in which we need to presented a evaluation case study in an organized manner that makes the information digestible. As a group, we decided to make a video that utilized voiceover and slides. I was responsible for writing the script and providing the voiceover. My teammates were responsible for reviewing the complete draft of the script and the visuals (utilizing Canva). I used an Audio-Technica AT4040 microphone to record the voiceovers, and Adobe Premiere to combine the visual and audio files.
+							a(href="https://youtu.be/QPAzw43cnYM" target='_blank' class="btn btn-primary") Click Here to View
+						//- div#modal_10.modal(tabindex="-1" role="dialog")
+						//- 	div.modal-dialog.modal-dialog-centered(role='document')
+						//- 		div.modal-content
+						//- 			div.modal-header
+						//- 				h5.modal-title Case 15 - Gap Inc
+						//- 				button(type="button" class="close" data-bs-dismiss="modal" aria-label="Close")
+						//- 					span(aria-hidden="true") &times;
+						//- 			div.modal-body
+						//- 				<iframe src="..\portfolio\Videos (Adobe Premiere and Voiceover)\Case15.mp4" width="1000" height="658"></iframe>
+						//- 			div.modal-footer
+						//- 				button(type="button" class="btn btn-secondary" data-bs-dismiss="modal") Close
+					div.col-6
+						div.card
+							div.card-body 
+							h5.card-title How to Make Flan
+							p.card-text This class assignment was to make a video using any software we wanted, and provide a voiceover. I decided make a live-action video of how to make dessert. I created a script for the voiceover, and created an outline for how the video will be shot. I used a Yeti Pro microphone for the voiceover. I used Adobe Premiere for the first time to combine the audio and visual files.
+							a(href="https://youtu.be/T4Du_aPvoVQ" target='_blank' class="btn btn-primary") Click Here to View
+						//- div#modal_11.modal(tabindex="-1" role="dialog")
+						//- 	div.modal-dialog.modal-dialog-centered(role='document')
+						//- 		div.modal-content
+						//- 			div.modal-header
+						//- 				h5.modal-title How to Make Flan
+						//- 				button(type="button" class="close" data-bs-dismiss="modal" aria-label="Close")
+						//- 					span(aria-hidden="true") &times;
+						//- 			div.modal-body
+						//- 				<iframe src="..\portfolio\Videos (Adobe Premiere and Voiceover)\How to Make Flan.mp4" width="1000" height="658"></iframe>
+						//- 			div.modal-footer
+						//- 				button(type="button" class="btn btn-secondary" data-bs-dismiss="modal") Close
+						div.stars
+							div.star
+							div.star
+							div.star
+							div.star
+							div.star
+							div.star
+							div.star
+							div.star
+							div.star
+							div.star
+							div.star
+							div.star
+							div.star
+							div.star
+							div.star
+							div.star
+							div.star
+							div.star
+							div.star
+							div.star
+							div.star
+							div.star
+							div.star
+							div.star
+							div.star
+							div.star
+							div.star
+							div.star
+							div.star
+							div.star
+							div.star
+							div.star
+							div.star
+							div.star
+							div.star
+							div.star
+							div.star
+							div.star
+							div.star
+							div.star
+							div.star
+							div.star
+							div.star
+							div.star
+							div.star
+							div.star
+							div.star
+							div.star
+							div.star
+							div.star
+							div.star
+							div.star
+							div.star
+							div.star
+							div.star
+		
