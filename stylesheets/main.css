@@ -1,4 +1,5 @@
 body {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#010b19), color-stop(#010b19), color-stop(#010b19), to(#05377b));
   background-image: linear-gradient(#010b19, #010b19, #010b19, #05377b);
   background-attachment: fixed;
   background-position: center;
@@ -47,15 +48,6 @@ a:active {
 }
 #hero-section p, #hero-section a {
   font-size: 150%;
-}
-
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  padding: 1em;
-}
-.grid-container.debug {
-  background-color: rgba(144, 238, 144, 0.7);
 }
 
 .card {

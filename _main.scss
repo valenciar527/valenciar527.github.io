@@ -62,15 +62,6 @@ a {
 	}
 }
 
-//Grid
-.grid-container {
-	display: grid;
-	grid-template-columns: repeat(4, 1fr);
-	padding: 1em;
-	&.debug {
-		background-color: rgba(lightgreen, 0.7); 
-	}
-}
 
 .card {
 	background-color: rgba(0, 0, 0, 0) !important;
