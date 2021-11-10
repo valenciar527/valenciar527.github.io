@@ -30,7 +30,7 @@ h1 {
 
 h2 {
 	font-size: 400%;
-	margin-bottom: 0.25em;
+	margin-bottom: -0.38em;
 }
 
 td, th {
@@ -44,11 +44,16 @@ a {
 		color: white;
 	}
 	&:hover {
-		color: $c5;
+		color: white;
 	}
-	&:active {
-		color: $c3;
+	&:visited {
+		color: white;
 	}
+}
+
+.row {
+	margin-left: 0 !important;
+	margin-right: 0 !important;
 }
 
 #main-content {
@@ -57,22 +62,57 @@ a {
 	padding: 2em;
 	background: rgba(0, 0, 0, 0.3);
 	z-index: -1;
-	img {
-		width: 100%;
+}
+
+#hero-section {
+	// margin-bottom: 7em;
+	h2 {
+		font-size: 300%;
+		margin-bottom: 3rem;
+	}
+	p {
+		font-size: 150%;
+	}
+	a.scroll-target {
+		&:link {
+			text-decoration: none;
+		}
+		&:hover {
+			color: black;
+			background-color: white;
+		}
+	}
+	#hero-img {
+		width: 35%;
 		float: right;
+		margin-left: 2rem;
 		border: 1px solid white;
 	}
 }
 
-#hero-section {
+
+#portfolio, #about-me {
+	padding-top: 4em;
 	margin-bottom: 7em;
-	p, a {
-		font-size: 150%;
-	}
 }
 
-#portfolio, #pos {
-	padding-top: 4em;
+#pos {
+	padding-top: 13em;
+	margin-bottom: 13em;
+}
+
+#contact {
+	width: 100%;
+}
+
+.p-container {
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+.table {
+	color: white !important;
+	overflow-x: auto;
 }
 
 .card {
@@ -83,6 +123,12 @@ a {
 	height: 100%;
 	.card-body {
 		display: none;
+	}
+	.card-text {
+		text-align: center;
+		padding: 0.375rem 0.75rem;
+		font-size: 1rem;
+		border-radius: 0.25rem;
 	}
 	.card-title {
 		font-weight: bold;
@@ -101,14 +147,18 @@ a {
 	max-width: 1000px !important;
 }
 
+.modal-body.anno {
 
-button {
-	margin-top: auto;
 }
 
 
-.space-bottom {
-	margin-bottom: 2em;
+button {
+	margin-top: 0.75em;
+}
+
+
+#portfolio > .row:not(:first-child) {
+	margin-bottom: 3em;
 }
 
 .navbar {
@@ -127,6 +177,16 @@ button {
 .navbar-brand {
 	border-right: 1px solid white;
 	padding-right: 2em;
+}
+
+.icon-center {
+	text-align: center;
+	.btn {
+		background-color: rgba(0, 0, 0, 0);
+		padding: 0.5em;
+		margin: 3em auto 0;
+		max-width: 60%;
+	}
 }
 
 
@@ -150,19 +210,63 @@ td, th {
 	padding-bottom: 0 !important;
 }
 
+td, .indent {
+	padding-left: 1.5em !important;
+}
+
 .row-space-bottom > td {
 	padding-bottom: 2.5em !important;
 }
 
-@media (max-width: 960px) {
+#footer {
+	background-color: black;
+	padding: 2em;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	h2 {
+		margin: 0;
+	}
+	.row {
+		margin-bottom: 0;
+	}
+}
 
-	#articulate {
+
+
+@media (max-width: 960px) {
+	#main-content, .container{
+			width: 100%;
+	}
+	#hero-section {
+		h2 {
+			font-size: 170%;
+		}
+		#hero-img {
+			width: 30%;
+		}
+	}
+	
+
+	.mobile-view {
 		flex-direction: column;
 		justify-content: center;
-		// min-width: 100%;
+		width: 100%;
 		.col {
+			max-width: 90%;
+			margin: 0 auto;
+			--bs-gutter-y: 1rem;
+			padding-top: calc(var(--bs-gutter-y) * .5);
+			padding-bottom: calc(var(--bs-gutter-y) * .5);
+		}
+		.responsive-iframe {
+			position: absolute;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
 			width: 100%;
-			max-width: 600px;
+			height: 100%;
 		}
 	}
 }
