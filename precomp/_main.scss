@@ -7,6 +7,11 @@ $c4: (#042c62);
 $c5: (#05377b);
 
 
+html {
+	scroll-behavior: auto !important;
+	transition-delay: 1000ms;
+}
+
 body {
 	background-image: linear-gradient($c1, $c1, $c1, $c5);
 	background-attachment: fixed;
@@ -28,6 +33,10 @@ h2 {
 	margin-bottom: 0.25em;
 }
 
+td, th {
+	color: white;
+}
+
 
 
 a {
@@ -43,10 +52,10 @@ a {
 }
 
 #main-content {
-	width: 100%;
+	width: 88%;
 	margin: 0 auto;
 	padding: 2em;
-	background: rgba(0, 0, 0, 0.6);
+	background: rgba(0, 0, 0, 0.3);
 	z-index: -1;
 	img {
 		width: 100%;
@@ -62,6 +71,9 @@ a {
 	}
 }
 
+#portfolio, #pos {
+	padding-top: 4em;
+}
 
 .card {
 	background-color: rgba(0, 0, 0, 0) !important;
@@ -97,4 +109,60 @@ button {
 
 .space-bottom {
 	margin-bottom: 2em;
+}
+
+.navbar {
+	background-color: black !important;
+}
+
+.current{
+	color: white !important;
+}
+
+.navbar-nav {
+	width: 100%;
+	justify-content: space-evenly;
+}
+
+.navbar-brand {
+	border-right: 1px solid white;
+	padding-right: 2em;
+}
+
+
+.modal {
+	transform: scale(0.5) translateY(30px);
+	transform-origin: 0% 0%;
+	opacity: 0;
+	transition: all 0.35s;
+	&.show {
+		transform: scale(1) translateY(0);
+		opacity: 1;
+	}
+}
+
+.w50 {
+	width: 50%;
+}
+
+td, th {
+	padding-top: 0 !important;
+	padding-bottom: 0 !important;
+}
+
+.row-space-bottom > td {
+	padding-bottom: 2.5em !important;
+}
+
+@media (max-width: 960px) {
+
+	#articulate {
+		flex-direction: column;
+		justify-content: center;
+		// min-width: 100%;
+		.col {
+			width: 100%;
+			max-width: 600px;
+		}
+	}
 }
