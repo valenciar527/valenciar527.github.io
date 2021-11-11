@@ -75,7 +75,7 @@ a:visited {
 }
 
 #portfolio, #about-me, #resume {
-  padding-top: 4em;
+  padding-top: 6em;
   margin-bottom: 7em;
 }
 
@@ -168,13 +168,18 @@ button, #voiceover button, #voiceover a {
   padding-right: 2em;
 }
 
+#favicon {
+  width: 70px;
+  height: 70px;
+}
+
 .icon-center {
   text-align: center;
 }
 .icon-center .btn {
   background-color: rgba(0, 0, 0, 0);
   padding: 0.5em;
-  margin: 3em auto 0;
+  margin: 2em auto 0;
   max-width: 60%;
 }
 
@@ -228,10 +233,15 @@ td, .indent {
   margin: 0 0 1em 0;
 }
 
-@media (max-width: 960px) {
+@media (max-width: 850px) {
   #main-content, .container {
     width: 100%;
     padding: 0.5rem;
+  }
+
+  #favicon {
+    width: 50px;
+    height: 50px;
   }
 
   #hero-section h2 {
