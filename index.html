@@ -102,6 +102,9 @@ a:visited {
 #contact {
   width: 100%;
 }
+#contact h2 {
+  font-size: 300%;
+}
 
 .p-container {
   max-width: 1000px;
@@ -111,6 +114,13 @@ a:visited {
 .table {
   color: white !important;
   overflow-x: auto;
+}
+
+.card-text {
+  text-align: center;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  border-radius: 0.25rem;
 }
 
 .card {
@@ -145,7 +155,7 @@ a:visited {
   max-width: 1000px !important;
 }
 
-button {
+button, #voiceover button, #voiceover a {
   margin-top: 0.75em;
 }
 
@@ -229,16 +239,39 @@ td, .indent {
   margin-bottom: 0;
 }
 
+#special-details {
+  margin: 0 0 1em 0;
+}
+
 @media (max-width: 960px) {
   #main-content, .container {
     width: 100%;
+    padding: 0.5rem;
   }
 
   #hero-section h2 {
     font-size: 170%;
+    text-align: left;
   }
   #hero-section #hero-img {
     width: 30%;
+  }
+
+  h1 {
+    font-size: 350%;
+  }
+
+  h2 {
+    font-size: 300%;
+    text-align: center;
+  }
+
+  table {
+    font-size: small;
+  }
+
+  #footer .col-2 {
+    width: 50%;
   }
 
   .mobile-view {
@@ -257,6 +290,15 @@ td, .indent {
     --bs-gutter-y: 1rem;
     padding-top: calc(var(--bs-gutter-y) * .5);
     padding-bottom: calc(var(--bs-gutter-y) * .5);
+  }
+  .mobile-view #special-details {
+    margin: 0 auto;
+  }
+  .mobile-view .modal-content {
+    width: 100% !important;
+  }
+  .mobile-view .modal-content embed {
+    width: 100%;
   }
   .mobile-view iframe {
     position: absolute;
@@ -746,7 +788,8 @@ td, .indent {
             <div class="col-12">
               <h2>Program of Study</h2>
               <hr>
-              <h3>Florida State University</h3><table class="table">
+              <h3>Florida State University</h3>
+              <div class="table-responsive-xs"><table class="table table-sm">
 <thead>
 <tr>
 <th id="first" scope="col">Semester</th>
@@ -830,6 +873,7 @@ td, .indent {
 </tr>
 </tbody>
 </table>
+              </div>
             </div>
           </div>
           <div id="portfolio">
@@ -847,7 +891,7 @@ td, .indent {
                 <div class="card">
                   <div class="card-body"> </div>
                   <h5 class="card-title">Basics to Music</h5>
-                  <button class="card-text" data-bs-toggle="modal" data-bs-target="#modal_10">More Details...  <i class="fas fa-chevron-right fa-xs"></i></button>
+                  <button class="card-text mt-auto" data-bs-toggle="modal" data-bs-target="#modal_10">More Details...  <i class="fas fa-chevron-right fa-xs"></i></button>
                   <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal_1">Click Here to View</button>
                 </div>
                 <div class="modal" id="modal_1" tabindex="-1" role="dialog">
@@ -855,11 +899,11 @@ td, .indent {
                     <div class="modal-content">
                       <div class="modal-header">
                         <h5 class="modal-title">Articulate Storyline 360 - Basics of Music</h5>
-                        <button class="close" type="button" data-bs-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <button class="mt-auto close" type="button" data-bs-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                       </div>
                       <div class="modal-body"><iframe class="responsive-iframe" id="pause-target-1" src="..\portfolio\Articulate 360\Valencia_BasicsToMusic_ver2 - Storyline output\Valencia_BasicsToMusic_ver2 - Storyline output\story.html" width="1000" height="658"></iframe></div>
                       <div class="modal-footer">
-                        <button class="btn btn-secondary" type="button" data-bs-dismiss="modal">Close</button>
+                        <button class="mt-auto btn btn-secondary" type="button" data-bs-dismiss="modal">Close</button>
                       </div>
                     </div>
                   </div>
@@ -896,7 +940,7 @@ td, .indent {
                 <div class="card">
                   <div class="card-body"> </div>
                   <h5 class="card-title">Music Clefs</h5>
-                  <button class="card-text" data-bs-toggle="modal" data-bs-target="#modal_11">More Details...  <i class="fas fa-chevron-right fa-xs"></i></button>
+                  <button class="card-text mt-auto" data-bs-toggle="modal" data-bs-target="#modal_11">More Details...  <i class="fas fa-chevron-right fa-xs"></i></button>
                   <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal_2">Click Here to View</button>
                 </div>
                 <div class="modal" id="modal_2" tabindex="-1" role="dialog">
@@ -950,7 +994,7 @@ td, .indent {
                 <div class="card">
                   <div class="card-body"> </div>
                   <h5 class="card-title">eBook - The school drummer's manual</h5>
-                  <button class="card-text" data-bs-toggle="modal" data-bs-target="#modal_12">More Details...  <i class="fas fa-chevron-right fa-xs"></i></button>
+                  <button class="card-text mt-auto" data-bs-toggle="modal" data-bs-target="#modal_12">More Details...  <i class="fas fa-chevron-right fa-xs"></i></button>
                   <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal_3">Click Here to View</button>
                 </div>
                 <div class="modal" id="modal_3" tabindex="-1" role="dialog">
@@ -999,8 +1043,7 @@ td, .indent {
                 <div class="card">
                   <div class="card-body"> </div>
                   <h5 class="card-title">How to Read HTML</h5>
-                  <p class="card-text">This was for assignment to make an infographic that served as a effective job aid. For this, I used Canva to create the infographic, and utilized my Information Technology skills to provide the context. The focus is a basic introduction to HTML, providing what it is, how it's used, an example, and vocabulary for foundational understanding. The design choice I am most proud of is the "Grammar" and "Basic Structure for a Webpage", for I made each element a specific color in so the "Grammar" could be used as a tool to decipher the example in the "Basic Structure for a Webpage" section.</p>
-                  <button class="card-text" data-bs-toggle="modal" data-bs-target="#modal_13">More Details...  <i class="fas fa-chevron-right fa-xs"></i></button>
+                  <button class="card-text mt-auto" data-bs-toggle="modal" data-bs-target="#modal_13">More Details...  <i class="fas fa-chevron-right fa-xs"></i></button>
                   <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal_4">Click Here to View</button>
                 </div>
                 <div class="modal" id="modal_4" tabindex="-1" role="dialog">
@@ -1026,7 +1069,7 @@ td, .indent {
                       </div>
                       <div class="modal-body anno">
                         <h6><em>Context</em>
-                          <p class="indent">This class assignment had us follow the whole instructional design process using the ADDIE model. I used Articulate 360 to create the lesson, implementing the work prior to determine the design.</p>
+                          <p class="indent">This was for assignment to make an infographic that served as a effective job aid. For this, I used Canva to create the infographic, and utilized my Information Technology skills to provide the context. The focus is a basic introduction to HTML, providing what it is, how it's used, an example, and vocabulary for foundational understanding. The design choice I am most proud of is the "Grammar" and "Basic Structure for a Webpage", for I made each element a specific color in so the "Grammar" could be used as a tool to decipher the example in the "Basic Structure for a Webpage" section.</p>
                         </h6>
                         <h6><em>Conditions</em> 
                           <p class="indent">This was the culmination of a semester's work. Prior to this, we conducted front-end analysis of the topic, audience and context, deconstructed the topic's subordinate skills and entry behavior, and created assessment and evaluation methods.</p>
@@ -1049,8 +1092,7 @@ td, .indent {
                 <div class="card">
                   <div class="card-body"> </div>
                   <h5 class="card-title">Tenor Drums Easy Guide</h5>
-                  <p class="card-text">This class assignment had us make a simple job aid using a Word document. The topic of my job aid is how to play the tenor drums, focusing on what tenor drums are, how to play, and emphasizing specific techniques needed to play the instrument. The drums were created using Word's shapes function. I decided to utilize Adobe Illustrator to create vector assets for the document; I created the drummers' hands in that software.</p>
-                  <button class="card-text" data-bs-toggle="modal" data-bs-target="#modal_14">More Details...  <i class="fas fa-chevron-right fa-xs"></i></button>
+                  <button class="card-text mt-auto" data-bs-toggle="modal" data-bs-target="#modal_14">More Details...  <i class="fas fa-chevron-right fa-xs"></i></button>
                   <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal_5">Click Here to View</button>
                 </div>
                 <div class="modal" id="modal_5" tabindex="-1" role="dialog">
@@ -1076,7 +1118,7 @@ td, .indent {
                       </div>
                       <div class="modal-body anno">
                         <h6><em>Context</em>
-                          <p class="indent">This class assignment had us follow the whole instructional design process using the ADDIE model. I used Articulate 360 to create the lesson, implementing the work prior to determine the design.</p>
+                          <p class="indent">This class assignment had us make a simple job aid using a Word document. The topic of my job aid is how to play the tenor drums, focusing on what tenor drums are, how to play, and emphasizing specific techniques needed to play the instrument. The drums were created using Word's shapes function. I decided to utilize Adobe Illustrator to create vector assets for the document; I created the drummers' hands in that software.</p>
                         </h6>
                         <h6><em>Conditions</em> 
                           <p class="indent">This was the culmination of a semester's work. Prior to this, we conducted front-end analysis of the topic, audience and context, deconstructed the topic's subordinate skills and entry behavior, and created assessment and evaluation methods.</p>
@@ -1099,14 +1141,42 @@ td, .indent {
             <div class="row mobile-view">
               <div class="subtitle col-12">
                 <h3>Tribecca - Using Canva</h3>
-                <p>When I interned for Tribecca Language in early 2021, I was tasked with creating worksheets from a given curriculum. These worksheets were designed for young children (ages 3-7), and developed using Canva. These worksheets focus on giving information, as well as providing activities to apply that said information. This was my first time using Canva, and I created at least 100 worksheets using a given template. These documents were authorized for me to use as work examples from my internship, and give a demonstration on how these worksheets were designed.</p>
+              </div>
+              <div class="col-12">
+                <button class="card-text" id="special-details" data-bs-toggle="modal" data-bs-target="#modal_15">More Details...  <i class="fas fa-chevron-right fa-xs"></i></button>
+                <div class="modal" id="modal_15" tabindex="-1" role="dialog">
+                  <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title">Articulate Storyline 360 - Basics of Music - Details</h5>
+                        <button class="close" type="button" data-bs-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                      </div>
+                      <div class="modal-body anno">
+                        <h6><em>Context</em>
+                          <p class="indent">When I interned for Tribecca Language in early 2021, I was tasked with creating worksheets from a given curriculum. These worksheets were designed for young children (ages 3-7), and developed using Canva. These worksheets focus on giving information, as well as providing activities to apply that said information. This was my first time using Canva, and I created at least 100 worksheets using a given template. These documents were authorized for me to use as work examples from my internship, and give a demonstration on how these worksheets were designed.</p>
+                        </h6>
+                        <h6><em>Conditions</em> 
+                          <p class="indent">This was the culmination of a semester's work. Prior to this, we conducted front-end analysis of the topic, audience and context, deconstructed the topic's subordinate skills and entry behavior, and created assessment and evaluation methods.</p>
+                        </h6>
+                        <h6><em>Scope</em> 
+                          <p class="indent">This was the first time I used Storyline 360, which I utilized the variable, triggers, and quiz pool functionality. I also created vector assets using Adobe Illustrator for the music symbols, as well as provided the voiceover.</p>
+                        </h6>
+                        <h6><em>Role</em> 
+                          <p class="indent">Solo work; designed and developed.</p>
+                        </h6>
+                      </div>
+                      <div class="modal-footer">
+                        <button class="btn btn-secondary" type="button" data-bs-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class="col">
                 <div class="card">
                   <div class="card-body"> </div>
                   <h5 class="card-title">Clothes - Japanese</h5>
-                  <button class="card-text" data-bs-toggle="modal" data-bs-target="#modal_15">More Details...  <i class="fas fa-chevron-right fa-xs"></i></button>
-                  <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal_6">Click Here to View</button>
+                  <button class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#modal_6">Click Here to View</button>
                 </div>
                 <div class="modal" id="modal_6" tabindex="-1" role="dialog">
                   <div class="modal-dialog modal-dialog-centered" role="document">
@@ -1122,40 +1192,12 @@ td, .indent {
                     </div>
                   </div>
                 </div>
-                <div class="modal" id="modal_15" tabindex="-1" role="dialog">
-                  <div class="modal-dialog modal-dialog-centered" role="document">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h5 class="modal-title">Articulate Storyline 360 - Basics of Music - Details</h5>
-                        <button class="close" type="button" data-bs-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                      </div>
-                      <div class="modal-body anno">
-                        <h6><em>Context</em>
-                          <p class="indent">This class assignment had us follow the whole instructional design process using the ADDIE model. I used Articulate 360 to create the lesson, implementing the work prior to determine the design.</p>
-                        </h6>
-                        <h6><em>Conditions</em> 
-                          <p class="indent">This was the culmination of a semester's work. Prior to this, we conducted front-end analysis of the topic, audience and context, deconstructed the topic's subordinate skills and entry behavior, and created assessment and evaluation methods.</p>
-                        </h6>
-                        <h6><em>Scope</em> 
-                          <p class="indent">This was the first time I used Storyline 360, which I utilized the variable, triggers, and quiz pool functionality. I also created vector assets using Adobe Illustrator for the music symbols, as well as provided the voiceover.</p>
-                        </h6>
-                        <h6><em>Role</em> 
-                          <p class="indent">Solo work; designed and developed.</p>
-                        </h6>
-                      </div>
-                      <div class="modal-footer">
-                        <button class="btn btn-secondary" type="button" data-bs-dismiss="modal">Close</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
               </div>
               <div class="col">
                 <div class="card">
                   <div class="card-body"> </div>
                   <h5 class="card-title">Clothes - Spanish</h5>
-                  <button class="card-text" data-bs-toggle="modal" data-bs-target="#modal_16">More Details...  <i class="fas fa-chevron-right fa-xs"></i></button>
-                  <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal_7">Click Here to View</button>
+                  <button class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#modal_7">Click Here to View</button>
                 </div>
                 <div class="modal" id="modal_7" tabindex="-1" role="dialog">
                   <div class="modal-dialog modal-dialog-centered" role="document">
@@ -1171,40 +1213,12 @@ td, .indent {
                     </div>
                   </div>
                 </div>
-                <div class="modal" id="modal_16" tabindex="-1" role="dialog">
-                  <div class="modal-dialog modal-dialog-centered" role="document">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h5 class="modal-title">Articulate Storyline 360 - Basics of Music - Details</h5>
-                        <button class="close" type="button" data-bs-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                      </div>
-                      <div class="modal-body anno">
-                        <h6><em>Context</em>
-                          <p class="indent">This class assignment had us follow the whole instructional design process using the ADDIE model. I used Articulate 360 to create the lesson, implementing the work prior to determine the design.</p>
-                        </h6>
-                        <h6><em>Conditions</em> 
-                          <p class="indent">This was the culmination of a semester's work. Prior to this, we conducted front-end analysis of the topic, audience and context, deconstructed the topic's subordinate skills and entry behavior, and created assessment and evaluation methods.</p>
-                        </h6>
-                        <h6><em>Scope</em> 
-                          <p class="indent">This was the first time I used Storyline 360, which I utilized the variable, triggers, and quiz pool functionality. I also created vector assets using Adobe Illustrator for the music symbols, as well as provided the voiceover.</p>
-                        </h6>
-                        <h6><em>Role</em> 
-                          <p class="indent">Solo work; designed and developed.</p>
-                        </h6>
-                      </div>
-                      <div class="modal-footer">
-                        <button class="btn btn-secondary" type="button" data-bs-dismiss="modal">Close</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
               </div>
               <div class="col">
                 <div class="card">
                   <div class="card-body"> </div>
                   <h5 class="card-title">Winter Clothes - Japanese</h5>
-                  <button class="card-text" data-bs-toggle="modal" data-bs-target="#modal_17">More Details...  <i class="fas fa-chevron-right fa-xs"></i></button>
-                  <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal_8">Click Here to View</button>
+                  <button class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#modal_8">Click Here to View</button>
                 </div>
                 <div class="modal" id="modal_8" tabindex="-1" role="dialog">
                   <div class="modal-dialog modal-dialog-centered" role="document">
@@ -1220,40 +1234,12 @@ td, .indent {
                     </div>
                   </div>
                 </div>
-                <div class="modal" id="modal_17" tabindex="-1" role="dialog">
-                  <div class="modal-dialog modal-dialog-centered" role="document">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h5 class="modal-title">Articulate Storyline 360 - Basics of Music - Details</h5>
-                        <button class="close" type="button" data-bs-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                      </div>
-                      <div class="modal-body anno">
-                        <h6><em>Context</em>
-                          <p class="indent">This class assignment had us follow the whole instructional design process using the ADDIE model. I used Articulate 360 to create the lesson, implementing the work prior to determine the design.</p>
-                        </h6>
-                        <h6><em>Conditions</em> 
-                          <p class="indent">This was the culmination of a semester's work. Prior to this, we conducted front-end analysis of the topic, audience and context, deconstructed the topic's subordinate skills and entry behavior, and created assessment and evaluation methods.</p>
-                        </h6>
-                        <h6><em>Scope</em> 
-                          <p class="indent">This was the first time I used Storyline 360, which I utilized the variable, triggers, and quiz pool functionality. I also created vector assets using Adobe Illustrator for the music symbols, as well as provided the voiceover.</p>
-                        </h6>
-                        <h6><em>Role</em> 
-                          <p class="indent">Solo work; designed and developed.</p>
-                        </h6>
-                      </div>
-                      <div class="modal-footer">
-                        <button class="btn btn-secondary" type="button" data-bs-dismiss="modal">Close</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
               </div>
               <div class="col">
                 <div class="card">
                   <div class="card-body"> </div>
                   <h5 class="card-title">Winter Clothes - Spanish</h5>
-                  <button class="card-text" data-bs-toggle="modal" data-bs-target="#modal_18">More Details...  <i class="fas fa-chevron-right fa-xs"></i></button>
-                  <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal_9">Click Here to View</button>
+                  <button class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#modal_9">Click Here to View</button>
                 </div>
                 <div class="modal" id="modal_9" tabindex="-1" role="dialog">
                   <div class="modal-dialog modal-dialog-centered" role="document">
@@ -1263,33 +1249,6 @@ td, .indent {
                         <button class="close" type="button" data-bs-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                       </div>
                       <div class="modal-body"><embed src="..\portfolio\Tribecca - Using Canva\Winter Clothes - Spanish.pdf#toolbar=0" width="1000" height="658"></div>
-                      <div class="modal-footer">
-                        <button class="btn btn-secondary" type="button" data-bs-dismiss="modal">Close</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="modal" id="modal_18" tabindex="-1" role="dialog">
-                  <div class="modal-dialog modal-dialog-centered" role="document">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h5 class="modal-title">Articulate Storyline 360 - Basics of Music - Details</h5>
-                        <button class="close" type="button" data-bs-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                      </div>
-                      <div class="modal-body anno">
-                        <h6><em>Context</em>
-                          <p class="indent">This class assignment had us follow the whole instructional design process using the ADDIE model. I used Articulate 360 to create the lesson, implementing the work prior to determine the design.</p>
-                        </h6>
-                        <h6><em>Conditions</em> 
-                          <p class="indent">This was the culmination of a semester's work. Prior to this, we conducted front-end analysis of the topic, audience and context, deconstructed the topic's subordinate skills and entry behavior, and created assessment and evaluation methods.</p>
-                        </h6>
-                        <h6><em>Scope</em> 
-                          <p class="indent">This was the first time I used Storyline 360, which I utilized the variable, triggers, and quiz pool functionality. I also created vector assets using Adobe Illustrator for the music symbols, as well as provided the voiceover.</p>
-                        </h6>
-                        <h6><em>Role</em> 
-                          <p class="indent">Solo work; designed and developed.</p>
-                        </h6>
-                      </div>
                       <div class="modal-footer">
                         <button class="btn btn-secondary" type="button" data-bs-dismiss="modal">Close</button>
                       </div>
@@ -1306,7 +1265,6 @@ td, .indent {
                 <div class="card">
                   <div class="card-body"> </div>
                   <h5 class="card-title">Case 15 - Gap Inc.</h5>
-                  <p class="card-text">This class assignment was a group project, in which we need to presented a evaluation case study in an organized manner that makes the information digestible. As a group, we decided to make a video that utilized voiceover and slides. I was responsible for writing the script and providing the voiceover. My teammates were responsible for reviewing the complete draft of the script and the visuals (utilizing Canva). I used an Audio-Technica AT4040 microphone to record the voiceovers, and Adobe Premiere to combine the visual and audio files.</p>
                   <button class="card-text" data-bs-toggle="modal" data-bs-target="#modal_19">More Details...  <i class="fas fa-chevron-right fa-xs"></i></button><a class="btn btn-primary" href="https://youtu.be/QPAzw43cnYM" target="_blank">Click Here to View</a>
                 </div>
                 <div class="modal" id="modal_19" tabindex="-1" role="dialog">
@@ -1318,7 +1276,7 @@ td, .indent {
                       </div>
                       <div class="modal-body anno">
                         <h6><em>Context</em>
-                          <p class="indent">This class assignment had us follow the whole instructional design process using the ADDIE model. I used Articulate 360 to create the lesson, implementing the work prior to determine the design.</p>
+                          <p class="indent">This class assignment was a group project, in which we need to presented a evaluation case study in an organized manner that makes the information digestible. As a group, we decided to make a video that utilized voiceover and slides. I was responsible for writing the script and providing the voiceover. My teammates were responsible for reviewing the complete draft of the script and the visuals (utilizing Canva). I used an Audio-Technica AT4040 microphone to record the voiceovers, and Adobe Premiere to combine the visual and audio files.</p>
                         </h6>
                         <h6><em>Conditions</em> 
                           <p class="indent">This was the culmination of a semester's work. Prior to this, we conducted front-end analysis of the topic, audience and context, deconstructed the topic's subordinate skills and entry behavior, and created assessment and evaluation methods.</p>
@@ -1341,7 +1299,6 @@ td, .indent {
                 <div class="card">
                   <div class="card-body"> </div>
                   <h5 class="card-title">How to Make Flan</h5>
-                  <p class="card-text">This class assignment was to make a video using any software we wanted, and provide a voiceover. I decided make a live-action video of how to make dessert. I created a script for the voiceover, and created an outline for how the video will be shot. I used a Yeti Pro microphone for the voiceover. I used Adobe Premiere for the first time to combine the audio and visual files.</p>
                   <button class="card-text" data-bs-toggle="modal" data-bs-target="#modal_20">More Details...  <i class="fas fa-chevron-right fa-xs"></i></button><a class="btn btn-primary" href="https://youtu.be/T4Du_aPvoVQ" target="_blank">Click Here to View</a>
                 </div>
               </div>
@@ -1354,7 +1311,7 @@ td, .indent {
                     </div>
                     <div class="modal-body anno">
                       <h6><em>Context</em>
-                        <p class="indent">This class assignment had us follow the whole instructional design process using the ADDIE model. I used Articulate 360 to create the lesson, implementing the work prior to determine the design.</p>
+                        <p class="indent">This class assignment was to make a video using any software we wanted, and provide a voiceover. I decided make a live-action video of how to make dessert. I created a script for the voiceover, and created an outline for how the video will be shot. I used a Yeti Pro microphone for the voiceover. I used Adobe Premiere for the first time to combine the audio and visual files.</p>
                       </h6>
                       <h6><em>Conditions</em> 
                         <p class="indent">This was the culmination of a semester's work. Prior to this, we conducted front-end analysis of the topic, audience and context, deconstructed the topic's subordinate skills and entry behavior, and created assessment and evaluation methods.</p>
@@ -1382,6 +1339,7 @@ td, .indent {
         <div class="row">
           <div class="subtitle col-12">
             <h2>Contact</h2>
+            <hr>
           </div>
         </div>
         <div class="row icon-center justify-content-center">
