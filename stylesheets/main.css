@@ -277,7 +277,7 @@ td, .indent {
     margin: 0 auto;
   }
   .mobile-view embed {
-    scale: 0.75;
+    scale: 0.1;
   }
   .mobile-view .modal-content {
     width: 100% !important;
