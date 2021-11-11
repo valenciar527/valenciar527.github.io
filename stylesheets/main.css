@@ -30,6 +30,10 @@ td, th {
   color: white;
 }
 
+li:last-child {
+  margin-bottom: 0.5em;
+}
+
 a:link {
   color: white;
 }
@@ -94,6 +98,7 @@ a:visited {
 .p-container {
   max-width: 1000px;
   margin: 0 auto;
+  font-size: 1.25em;
 }
 
 .table {
@@ -134,10 +139,16 @@ a:visited {
 .modal-content {
   background-color: #042c62 !important;
   width: auto !important;
+  margin: 0 auto;
 }
 
 .modal-dialog {
   max-width: 1000px !important;
+}
+
+.modal-body.anno {
+  padding: 2em;
+  height: auto;
 }
 
 button, #voiceover button, #voiceover a {
@@ -233,7 +244,7 @@ td, .indent {
   margin: 0 0 1em 0;
 }
 
-@media (max-width: 850px) {
+@media (max-width: 900px) {
   #main-content, .container {
     width: 100%;
     padding: 0.5rem;
@@ -266,6 +277,15 @@ td, .indent {
     width: 50%;
   }
 
+  iframe {
+    width: 100% !important;
+    height: 100%;
+  }
+
+  .modal-content {
+    margin: 0 auto;
+  }
+
   .mobile-view {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -290,8 +310,9 @@ td, .indent {
     scale: 0.1;
   }
   .mobile-view .modal-content {
-    width: 100% !important;
+    width: 90% !important;
     height: 100% !important;
+    margin: 0 auto;
   }
   .mobile-view .modal-content embed {
     width: 100%;
@@ -301,7 +322,7 @@ td, .indent {
     width: 100% !important;
     height: 100% !important;
   }
-  .mobile-view#articulate .modal-body {
+  .mobile-view#articulate #modal_1 .modal-body, .mobile-view#articulate #modal_2 .modal-body {
     height: 600px;
     padding: 0 !important;
   }

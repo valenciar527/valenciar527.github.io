@@ -37,7 +37,9 @@ td, th {
 	color: white;
 }
 
-
+li:last-child {
+	margin-bottom: 0.5em;
+}
 
 a {
 	&:link {
@@ -111,6 +113,7 @@ a {
 .p-container {
 	max-width: 1000px;
 	margin: 0 auto;
+	font-size: 1.25em;
 }
 
 .table {
@@ -151,6 +154,7 @@ a {
 .modal-content {
 	background-color: $c4 !important;
 	width: auto !important;
+	margin: 0 auto;
 }
 
 .modal-dialog {
@@ -158,8 +162,11 @@ a {
 }
 
 .modal-body.anno {
-
+	padding: 2em;
+	height: auto;
+	// overflow-y: scroll;
 }
+
 
 
 button, #voiceover button, #voiceover a {
@@ -252,11 +259,11 @@ td, .indent {
 	margin: 0 0 1em 0;
 }
 
-.navbar-brand {
+// iframe {
+// 	width: 100%;
+// }
 
-}
-
-@media (max-width: 850px) {
+@media (max-width: 900px) {
 	#main-content, .container{
 			width: 100%;
 			padding: 0.5rem;
@@ -294,6 +301,15 @@ td, .indent {
 		}
 	}
 
+	iframe {
+		width: 100% !important;
+		height: 100%;
+	}
+
+	.modal-content {
+		margin: 0 auto;
+	}
+
 	.mobile-view {
 		flex-direction: column;
 		justify-content: center;
@@ -312,8 +328,9 @@ td, .indent {
 			scale: 0.1;
 		}
 		.modal-content {
-			width: 100% !important;
+			width: 90% !important;
 			height: 100% !important;
+			margin: 0 auto;
 			embed {
 				width: 100%;
 			}
@@ -324,9 +341,11 @@ td, .indent {
 			height: 100% !important;
 		}
 		&#articulate {
-			.modal-body {
-				height: 600px;
-				padding: 0 !important;
+			#modal_1, #modal_2 {
+				.modal-body {
+					height: 600px;
+					padding: 0 !important;
+				}
 			}
 		}
 	}
