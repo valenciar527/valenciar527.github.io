@@ -91,7 +91,7 @@ a {
 }
 
 
-#portfolio, #about-me {
+#portfolio, #about-me, #resume {
 	padding-top: 4em;
 	margin-bottom: 7em;
 }
@@ -257,9 +257,13 @@ td, .indent {
 			font-size: 170%;
 			text-align: left;
 		}
-		#hero-img {
-			width: 30%;
-		}
+		// #hero-img {
+		// 	width: 150px;
+		// 	height: 150px; /* height of container */
+		// 	overflow: hidden;
+		// 	float: none;
+		// 	margin-left: 0;
+		// }
 	}
 	h1 {
 		font-size: 350%;
@@ -291,20 +295,26 @@ td, .indent {
 		#special-details {
 			margin: 0 auto;
 		}
+		embed {
+			scale: 0.75;
+		}
 		.modal-content {
 			width: 100% !important;
+			height: 100% !important;
 			embed {
 				width: 100%;
 			}
 		}
 		iframe {
 			position: absolute;
-			top: 0;
-			left: 0;
-			bottom: 0;
-			right: 0;
-			width: 100%;
-			height: 100%;
+			width: 100% !important;
+			height: 100% !important;
+		}
+		&#articulate {
+			.modal-body {
+				height: 600px;
+				padding: 0 !important;
+			}
 		}
 	}
 }

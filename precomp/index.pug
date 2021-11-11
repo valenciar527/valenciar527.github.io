@@ -78,7 +78,7 @@ html(lang='en')
 							h2 Program of Study
 							hr
 							h3 Florida State University
-							div.table-responsive-xs
+							div.table-responsive-sm
 								<table class="table table-sm">
 									<thead>
 										<tr>
@@ -168,7 +168,7 @@ html(lang='en')
 							div.col-12
 								h2 Portfolio
 								hr
-						div.row.mobile-view
+						div#articulate.row.mobile-view
 							div.subtitle.col-12
 								h3 Articulate Storyline 360
 							div.col
@@ -258,7 +258,7 @@ html(lang='en')
 												button(type="button" class="close" data-bs-dismiss="modal" aria-label="Close")
 													span(aria-hidden="true") &times;
 											div.modal-body
-												<embed src="..\portfolio\Instructional Documents\Valencia_eBook.pdf#toolbar=0" width="1000" height="658">
+												<embed src="..\portfolio\Instructional Documents\Valencia_eBook.pdf#toolbar=0" type="application/pdf width="1000" height="658">
 											div.modal-footer
 												button(type="button" class="btn btn-secondary" data-bs-dismiss="modal") Close
 								div#modal_12.modal(tabindex="-1" role="dialog")
@@ -488,6 +488,15 @@ html(lang='en')
 													p.indent Solo work; designed and developed.
 											div.modal-footer
 												button(type="button" class="btn btn-secondary" data-bs-dismiss="modal") Close
+					div#resume
+						div.row
+							div.col-12
+								h2 Resume
+								hr
+						<embed src="..\portfolio\Valencia_2021.pdf#toolbar=0" width="100%" height="600">
+						div.row.mobile-view
+							button(class="btn btn-primary mt-auto" href="../portfolio/Valencia_2021.pdf" download="Valencia_2021.pdf") Click Here to Download
+						
 		div#footer
 			div#contact.container
 				div.row
