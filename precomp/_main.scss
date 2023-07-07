@@ -66,6 +66,13 @@ a {
 	z-index: -1;
 }
 
+nav {
+	border-bottom: 2px solid #9c9494;
+	a:focus {
+		color: white !important;
+	}
+}
+
 #hero-section {
 	margin-top: 96px;
 	h2 {
