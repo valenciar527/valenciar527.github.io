@@ -67,7 +67,7 @@ a {
 }
 
 #hero-section {
-	// margin-bottom: 7em;
+	margin-top: 96px;
 	h2 {
 		font-size: 300%;
 		margin-bottom: 3rem;
@@ -180,6 +180,10 @@ button, #voiceover button, #voiceover a {
 
 .navbar {
 	background-color: black !important;
+	position: fixed;
+	top: 0;
+	z-index: 1020;
+	width: 100%;
 }
 
 .current{

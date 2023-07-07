@@ -73,6 +73,9 @@ a:visited {
   z-index: -1;
 }
 
+#hero-section {
+  margin-top: 96px;
+}
 #hero-section h2 {
   font-size: 300%;
   margin-bottom: 3rem;
@@ -177,6 +180,10 @@ button, #voiceover button, #voiceover a {
 
 .navbar {
   background-color: black !important;
+  position: fixed;
+  top: 0;
+  z-index: 1020;
+  width: 100%;
 }
 
 .current {
@@ -265,43 +272,34 @@ td, .indent {
     width: 100%;
     padding: 0.5rem;
   }
-
   #favicon {
     width: 50px;
     height: 50px;
   }
-
   #hero-section h2 {
     font-size: 170%;
     text-align: left;
   }
-
   h1 {
     font-size: 350%;
   }
-
   h2 {
     font-size: 300%;
     text-align: center;
   }
-
   table {
     font-size: small;
   }
-
   #footer .col-2 {
     width: 50%;
   }
-
   iframe {
     width: 100% !important;
     height: 100%;
   }
-
   .modal-content {
     margin: 0 auto;
   }
-
   .mobile-view {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -316,8 +314,8 @@ td, .indent {
     max-width: 90%;
     margin: 0 auto;
     --bs-gutter-y: 1rem;
-    padding-top: calc(var(--bs-gutter-y) * .5);
-    padding-bottom: calc(var(--bs-gutter-y) * .5);
+    padding-top: calc(var(--bs-gutter-y) * 0.5);
+    padding-bottom: calc(var(--bs-gutter-y) * 0.5);
   }
   .mobile-view #special-details {
     margin: 0 auto;
