@@ -145,6 +145,9 @@ nav a:focus {
 .card a {
   margin-top: auto;
 }
+.card a button {
+  width: -webkit-fill-available;
+}
 
 .modal-content {
   background-color: #042c62 !important;

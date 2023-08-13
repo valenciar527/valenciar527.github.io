@@ -155,6 +155,9 @@ nav {
 	}
 	a {
 		margin-top: auto;
+		button {
+			width: -webkit-fill-available;
+		}
 	}
 }
 
