@@ -6,6 +6,33 @@ $c3: (#03214a);
 $c4: (#042c62);
 $c5: (#05377b);
 
+.d-block {
+	height: 100vh;
+}
+
+.img-fluid {
+	height: 100vh;
+	object-fit: cover;
+}
+
+
+//Resume Drawer Styling
+.resume-container {
+	display: flex;
+	align-items: center;
+	text-align: center;
+	justify-content: space-evenly;
+}
+.icon {
+	cursor: pointer;
+	margin: 0 10px;
+}
+.content {
+	display: none;
+}
+.active {
+	position: relative;
+}
 
 html {
 	scroll-behavior: auto !important;
@@ -21,6 +48,7 @@ body {
 	min-height: 100vh;
 	color: white; 
 	font-family: 'Space Grotesk', sans-serif;
+	position: relative;
 }
 
 h1 {
@@ -51,6 +79,9 @@ a {
 	&:visited {
 		color: white;
 	}
+	&:active {
+		text-decoration: underline;
+	}
 }
 
 .row {
@@ -74,7 +105,6 @@ nav {
 }
 
 #hero-section {
-	margin-top: 96px;
 	h2 {
 		font-size: 300%;
 		margin-bottom: 3rem;
@@ -86,7 +116,7 @@ nav {
 		&:link {
 			text-decoration: none;
 		}
-		&:hover {
+		&:hover :not(i, .icon-center) {
 			color: black;
 			background-color: white;
 		}
@@ -139,10 +169,11 @@ nav {
 	background-color: rgba(0, 0, 0, 0) !important;
 	border: 1px solid white;
 	border-radius: 1em;
-	padding: 1em;
 	height: 100%;
-	.card-body {
-		display: none;
+	.card-img-top {
+		height: 10em;
+		object-fit: cover;
+		border-radius: 1em;
 	}
 	.card-text {
 		text-align: center;
