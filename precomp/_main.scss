@@ -79,7 +79,7 @@ a {
 	&:visited {
 		color: white;
 	}
-	&:active {
+	&.active {
 		text-decoration: underline;
 	}
 }
