@@ -328,7 +328,11 @@ td, .indent {
   margin: 0 0 1em 0;
 }
 
-@media (max-width: 900px) {
+.mobile-alt {
+  display: none;
+}
+
+@media (max-width: 990px) {
   #main-content, .container {
     width: 100%;
     padding: 0.5rem;
@@ -336,6 +340,9 @@ td, .indent {
   #favicon {
     width: 50px;
     height: 50px;
+  }
+  #hero-section {
+    padding-top: 6rem;
   }
   #hero-section h2 {
     font-size: 170%;
@@ -353,6 +360,12 @@ td, .indent {
   }
   .modal-content {
     margin: 0 auto;
+  }
+  .mobile-alt {
+    display: block;
+  }
+  .mobile-hide {
+    display: none;
   }
   .mobile-view {
     -webkit-box-orient: vertical;
@@ -415,7 +428,7 @@ td, .indent {
 </div>
 </nav>
     <div id="overlay">
-      <div class="overflow-hidden">
+      <div class="overflow-hidden mobile-hide">
         <div class="container-fluid col-xxl-10">
           <div class="row flex-lg-nowrap align-items-center g-5" id="hero-section">
             <div class="order-lg-1 w-100 col-lg-2">
@@ -438,6 +451,22 @@ td, .indent {
             </div>
           </div>
           <!-- /lc-block-->
+        </div>
+      </div>
+      <div class="container mobile-alt">
+        <div class="row" id="hero-section">
+          <div class="col">
+            <h1>RJ Valencia<a href="https://www.linkedin.com/in/richard-rj-valencia/" target="_blank"><img id="hero-img" src="img\hero-img2.JPG"></a></h1>
+            <hr>
+            <h2>
+               The name’s Richard Valencia, but please call me RJ! </h2>
+            <div class="indent">
+              <h2> <a class="scroll-target" href="#portfolio"><em>instructional designer,</em></a> <br><a class="scroll-target" href="#resume"><em>front-end web developer,</em></a><br><a class="scroll-target" href="#voiceover"><em>and aspiring voiceover artist.</em> </a> </h2>
+            </div>
+          </div>
+        </div>
+        <div class="row icon-center">
+          <button class="btn btn-primary col"><a class="nav-link scroll-target" href="#portfolio"><i class="fas fa-angle-double-down fa-3x"></i></a></button>
         </div>
       </div>
       <div id="main-content">

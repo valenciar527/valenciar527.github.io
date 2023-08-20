@@ -313,7 +313,11 @@ td, .indent {
   margin: 0 0 1em 0;
 }
 
-@media (max-width: 900px) {
+.mobile-alt {
+  display: none;
+}
+
+@media (max-width: 990px) {
   #main-content, .container {
     width: 100%;
     padding: 0.5rem;
@@ -321,6 +325,9 @@ td, .indent {
   #favicon {
     width: 50px;
     height: 50px;
+  }
+  #hero-section {
+    padding-top: 6rem;
   }
   #hero-section h2 {
     font-size: 170%;
@@ -338,6 +345,12 @@ td, .indent {
   }
   .modal-content {
     margin: 0 auto;
+  }
+  .mobile-alt {
+    display: block;
+  }
+  .mobile-hide {
+    display: none;
   }
   .mobile-view {
     -webkit-box-orient: vertical;

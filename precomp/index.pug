@@ -39,7 +39,7 @@ html(lang='en')
 			</div>
 		</nav>
 		#overlay
-			.overflow-hidden
+			.overflow-hidden.mobile-hide
 				.container-fluid.col-xxl-10
 					#hero-section.row.flex-lg-nowrap.align-items-center.g-5
 						.order-lg-1.w-100.col-lg-2
@@ -67,6 +67,30 @@ html(lang='en')
 										a(class="nav-link scroll-target" href="#portfolio")
 											<i class="fas fa-angle-double-down fa-3x"></i>
 					// /lc-block
+			div.container.mobile-alt
+				div#hero-section.row
+					div.col
+						h1 RJ Valencia
+							a(href='https://www.linkedin.com/in/richard-rj-valencia/' target='_blank')
+								<img id="hero-img" src="img\hero-img2.JPG">
+						hr
+						h2 
+							| The name’s Richard Valencia, but please call me RJ! 
+						div.indent
+							h2
+								| 
+								a(class="scroll-target" href="#portfolio") <em>instructional designer,</em>
+								| 
+								br
+								a(class="scroll-target" href="#resume") <em>front-end web developer,</em>
+								|
+								br
+								a(class="scroll-target" href="#voiceover") <em>and aspiring voiceover artist.</em> 
+								| 
+				div.row.icon-center
+					button(class="btn btn-primary").col
+						a(class="nav-link scroll-target" href="#portfolio")
+							<i class="fas fa-angle-double-down fa-3x"></i>
 			div#main-content
 				div.container
 					div#portfolio
