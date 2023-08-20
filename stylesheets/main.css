@@ -262,6 +262,9 @@ td, .indent {
 }
 
 @media (max-width: 900px) {
+  #mobile-hide {
+    display: none;
+  }
   #main-content, .container {
     width: 100%;
     padding: 0.5rem;
