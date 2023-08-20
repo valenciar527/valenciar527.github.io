@@ -13,6 +13,10 @@ $c5: (#05377b);
 .img-fluid {
 	height: 100vh;
 	object-fit: cover;
+	img.img-fluid {
+		max-width: 80%;
+		mask-image: linear-gradient(bottom, transparent 0, rgba(0, 0, 0, 1) 3%);
+	}
 }
 
 
@@ -52,7 +56,7 @@ body {
 }
 
 h1 {
-	font-size: 500%;
+	font-size: 650%;
 	margin-bottom: 0.25em;
 }
 
@@ -93,7 +97,7 @@ a {
 	width: 88%;
 	margin: 0 auto;
 	padding: 2em;
-	background: rgba(0, 0, 0, 0.3);
+	background: linear-gradient(top, transparent 0, rgba(0, 0, 0, 0.3) 15%);
 	z-index: -1;
 }
 
@@ -105,8 +109,11 @@ nav {
 }
 
 #hero-section {
+	h1 {
+		margin-bottom: 0 !important;
+	}
 	h2 {
-		font-size: 300%;
+		font-size: 250%;
 		margin-bottom: 3rem;
 	}
 	p {
@@ -131,7 +138,7 @@ nav {
 
 
 #portfolio, #about-me, #resume {
-	padding-top: 6em;
+	padding-top: 10em;
 	margin-bottom: 7em;
 }
 
@@ -234,11 +241,13 @@ button, #voiceover button, #voiceover a {
 .navbar-nav {
 	width: 100%;
 	justify-content: space-evenly;
+	font-size: larger;
+	margin: auto;
 }
 
 .navbar-brand {
 	border-right: 1px solid white;
-	padding-right: 2em;
+	padding-right:  var(--bs-gutter-x,.75rem);
 }
 
 #favicon {
@@ -322,13 +331,6 @@ td, .indent {
 			font-size: 170%;
 			text-align: left;
 		}
-		// #hero-img {
-		// 	width: 150px;
-		// 	height: 150px; /* height of container */
-		// 	overflow: hidden;
-		// 	float: none;
-		// 	margin-left: 0;
-		// }
 	}
 	h1 {
 		font-size: 350%;
@@ -337,18 +339,10 @@ td, .indent {
 		font-size: 300%;
 		text-align: center;
 	}
-	table {
-		font-size: small;
-	}
 	#footer {
 		.col-2 {
 			width: 50% ;
 		}
-	}
-
-	iframe {
-		width: 100% !important;
-		height: 100%;
 	}
 
 	.modal-content {

@@ -7,6 +7,13 @@
   -o-object-fit: cover;
      object-fit: cover;
 }
+.img-fluid img.img-fluid {
+  max-width: 80%;
+  -webkit-mask-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, transparent), color-stop(3%, rgb(0, 0, 0)));
+  -webkit-mask-image: linear-gradient(bottom, transparent 0, rgb(0, 0, 0) 3%);
+          mask-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, transparent), color-stop(3%, rgb(0, 0, 0)));
+          mask-image: linear-gradient(bottom, transparent 0, rgb(0, 0, 0) 3%);
+}
 
 .resume-container {
   display: -webkit-box;
@@ -54,7 +61,7 @@ body {
 }
 
 h1 {
-  font-size: 500%;
+  font-size: 650%;
   margin-bottom: 0.25em;
 }
 
@@ -93,7 +100,8 @@ a.active {
   width: 88%;
   margin: 0 auto;
   padding: 2em;
-  background: rgba(0, 0, 0, 0.3);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, transparent), color-stop(15%, rgba(0, 0, 0, 0.3)));
+  background: linear-gradient(top, transparent 0, rgba(0, 0, 0, 0.3) 15%);
   z-index: -1;
 }
 
@@ -104,8 +112,11 @@ nav a:focus {
   color: white !important;
 }
 
+#hero-section h1 {
+  margin-bottom: 0 !important;
+}
 #hero-section h2 {
-  font-size: 300%;
+  font-size: 250%;
   margin-bottom: 3rem;
 }
 #hero-section p {
@@ -126,7 +137,7 @@ nav a:focus {
 }
 
 #portfolio, #about-me, #resume {
-  padding-top: 6em;
+  padding-top: 10em;
   margin-bottom: 7em;
 }
 
@@ -228,11 +239,13 @@ button, #voiceover button, #voiceover a {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  font-size: larger;
+  margin: auto;
 }
 
 .navbar-brand {
   border-right: 1px solid white;
-  padding-right: 2em;
+  padding-right: var(--bs-gutter-x, 0.75rem);
 }
 
 #favicon {
@@ -320,15 +333,8 @@ td, .indent {
     font-size: 300%;
     text-align: center;
   }
-  table {
-    font-size: small;
-  }
   #footer .col-2 {
     width: 50%;
-  }
-  iframe {
-    width: 100% !important;
-    height: 100%;
   }
   .modal-content {
     margin: 0 auto;

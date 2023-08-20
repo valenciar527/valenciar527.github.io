@@ -23,7 +23,7 @@ html(lang='en')
 	body(data-bs-spy="scroll" data-bs-target="#spy-target" data-bs-offset="0" tabindex="0")
 		<nav id="spy-target" class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
 			<div class="container-fluid">
-				//- <a class="navbar-brand scroll-target" href="#"><img id="favicon" src="..\img\rj_logo.svg" alt="RJ Valencia logo; an orange with RJ written on it"></a>
+				<a class="navbar-brand scroll-target" href="#hero-section"><img id="favicon" src="..\img\valencia-favicon.svg" alt="Icon of valencia orange"></a>
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
@@ -31,46 +31,43 @@ html(lang='en')
 					<div id="test" class="navbar-nav">
 						//- <a class="nav-link scroll-target" href="#about-me">About Me</a>
 						//- <a class="nav-link scroll-target" href="#pos">Program of Study</a>
-						<li class="nav-item"><a class="nav-link scroll-target" href="#portfolio">Portfolio</a></li>
-						<li class="nav-item"><a class="nav-link scroll-target" href="#resume">Resume</a></li>
-						<li class="nav-item"><a class="nav-link scroll-target" href="#contact">Contact</a></li>
+						<a class="nav-link scroll-target" href="#portfolio">Portfolio</a>
+						<a class="nav-link scroll-target" href="#resume">Resume</a>
+						<a class="nav-link scroll-target" href="#contact">Contact</a>
 					</div>
 				</div>
 			</div>
 		</nav>
-		<div data-bs-spy="scroll" data-bs-target="#spy-target" data-bs-offset="0" class="scrollspy-example" tabindex="0">
-		.overflow-hidden
-			.container-fluid.col-xxl-8
-				#hero-section.row.flex-lg-nowrap.align-items-center.g-5
-					.order-lg-1.w-100
-						.d-block.mx-lg-auto.img-fluid(style='clip-path: polygon(25% 0%, 100% 0%, 100% 99%, 0% 100%);')
-							img.img-fluid(src='img/hero-img2-2.JPG' alt='Photo by Milad Fakurian' sizes='(max-width: 1080px) 100vw, 1080px' width='2160' height='768')
-					.col-lg-6.col-xl-5.text-center.text-lg-start.pt-lg-5.mt-xl-4
-						.lc-block.mb-4
-							div(editable='rich')
-								h2 
-								| The name’s Richard Valencia, but please call me
-								h1.fw-bold.display-3 RJ Valencia
-						.lc-block.mb-5
-							div(editable='rich')
-								h2
-								| 
-								a(class="scroll-target" href="#portfolio") <em>instructional designer,</em>
-								| 
-								br
-								a(class="scroll-target" href="#resume") <em>front-end web developer,</em>
-								|
-								br
-								a(class="scroll-target" href="#voiceover") <em>and aspiring voiceover artist.</em> 
-								| 
-						.lc-block.mb-6
-							div.row.icon-center
-								button(class="btn btn-primary").col
-									a(class="nav-link scroll-target" href="#portfolio")
-										<i class="fas fa-angle-double-down fa-3x"></i>
-				// /lc-block
-		div#main-content
-			div#overlay
+		#overlay
+			.overflow-hidden
+				.container-fluid.col-xxl-10
+					#hero-section.row.flex-lg-nowrap.align-items-center.g-5
+						.order-lg-1.w-100.col-lg-2
+							.d-block.mx-lg-auto.img-fluid(style='clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);').animate__animated.animate__fadeInRight.animate__delay-0.5s
+								img.img-fluid(src='img/hero-img2-2.JPG' alt='Photo by Milad Fakurian' sizes='(max-width: 1080px) 100vw, 1080px' width='2160' height='768')
+						.col-lg-6.col-xl-5.text-center.text-lg-start.pt-lg-5.mt-xl-4
+							.lc-block.mb-4.animate__animated.animate__fadeInLeft
+								div(editable='rich')
+									h5 The name’s Richard Valencia, but please call me
+									h1.fw-bold RJ Valencia
+									hr
+									h2
+										| 
+										a(class="scroll-target" href="#portfolio") <em>instructional designer,</em>
+										| 
+										br
+										a(class="scroll-target" href="#resume") <em>front-end web developer,</em>
+										|
+										br
+										a(class="scroll-target" href="#voiceover") <em>and aspiring voiceover artist.</em> 
+										| 
+							.lc-block.mb-6.animate__animated.animate__fadeInLeft.animate__delay-1s
+								div.row.icon-center
+									button(class="btn btn-primary").col
+										a(class="nav-link scroll-target" href="#portfolio")
+											<i class="fas fa-angle-double-down fa-3x"></i>
+					// /lc-block
+			div#main-content
 				div.container
 					div#portfolio
 						div.row
