@@ -19,6 +19,10 @@ $c5: (#05377b);
 	}
 }
 
+#hero-section > .animate__animated {
+	animation-iteration-count: 1;
+}
+
 
 //Resume Drawer Styling
 .resume-container {
